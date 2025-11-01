@@ -1,0 +1,14 @@
+/* Ajouter ces styles CSS dans ton fichier CSS global */
+.animated-row {
+  animation: fadeOut 10s ease-out;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+

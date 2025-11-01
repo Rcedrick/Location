@@ -1,0 +1,29 @@
+.badge {
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 40%;
+    padding: 5px 6px;
+  }
+  
+  .position-relative {
+    position: relative;
+  }
+  
+  .position-absolute {
+    position: absolute;
+  }
+  
+  .top-0 {
+    top: 0;
+  }
+  
+  .start-100 {
+    left: 100%;
+  }
+  
+  .translate-middle {
+    transform: translate(-50%, -50%);
+  }
+  

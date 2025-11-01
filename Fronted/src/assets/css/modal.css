@@ -1,0 +1,155 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 750px;
+  height: 500px;
+  padding: 15px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Header */
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+/* Bouton de fermeture (X) sous forme d'icône ronde */
+.close-btn img {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%; /* Rend le bouton complètement rond */
+  font-size: 6px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.close-btn {
+  transition: transform 0.3s ease;
+}
+
+/* Effet de rotation et changement de couleur au hover */
+.close-btn:hover {
+  transform: rotate(180deg); /* Rotation complète */
+}
+
+/* Modal Body */
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+/* Image du produit */
+.modal-product-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 6px;
+  position: relative;
+  top: -20px;
+  left: 5px;
+
+}
+
+/* Détails du produit */
+.modal-product-details {
+  width: 50%;
+  text-align: left;
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+/* Prix du produit en grand */
+.modal-product-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #28a745;
+  margin-top: 5px;
+}
+
+/* Modal Footer */
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.add-to-cart-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #218838;
+}
+
+.modal-product-category{
+  position: absolute;
+  top: 20px;
+  font-size: 30px;
+  font-weight: bolder;
+  color: rgb(90, 37, 37);
+
+}
+.modal-product-description{
+  position: absolute;
+  top: 70px;
+  font-size: 20px;
+}
+.modal-product-price{
+  position: relative;
+  top: 140px;
+  left: 50px;
+  font-size: 20px;
+  color: rgb(90, 37, 37);
+
+}
+.modal-product-stock{
+  position: relative;
+  top: -10px;
+  font-size: 22px;
+}
+.modal-product-stock-number{
+  font-size: 30px;
+  color: rgb(90, 37, 37);
+
+}
+.modal-product-price-number{
+  font-size: 50px;
+  color: rgb(90, 37, 37);
+}
+.modal-button{
+  
+}

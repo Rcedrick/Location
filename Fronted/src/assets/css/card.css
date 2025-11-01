@@ -1,0 +1,10 @@
+  
+  .product-thumbnail {
+    border-radius: 8px;
+    height: 220px;
+    width: 220px;
+    object-fit: cover;
+  }
+  
+ 
+

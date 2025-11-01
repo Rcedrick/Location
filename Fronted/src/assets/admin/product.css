@@ -1,0 +1,105 @@
+.produit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colonnes fixes */
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.produit-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.produit-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.produit-item h4 {
+    font-size: 1.25rem;
+    margin: 10px 0;
+}
+
+.produit-item p {
+    margin: 5px 0;
+}
+
+.produit-actions {
+    margin-top: 10px;
+}
+
+.produit-actions .btn {
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+/* Responsive : 2 colonnes pour les tablettes */
+@media (max-width: 900px) {
+    .produit-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsive : 1 colonne pour les petits écrans */
+@media (max-width: 600px) {
+    .produid-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Style général du popup */
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+    z-index: 1000;
+}
+
+/* Fond semi-transparent derrière le popup */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+/* Style des inputs du formulaire */
+.popup-container input,
+.popup-container button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Bouton de fermeture */
+.popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}

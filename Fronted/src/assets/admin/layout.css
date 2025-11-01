@@ -1,0 +1,24 @@
+/* Conteneur principal en Grid */
+.dashboard-container {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Sidebar prend 250px, Dashboard prend le reste */
+    height: 100vh; /* Pleine hauteur */
+  }
+  
+  /* Sidebar (Navbar) */
+  .sidebar {
+    background-color: #f8f9fa;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+  
+  /* Contenu principal */
+  .main-content {
+    margin-left: 250px; /* Décalage pour éviter de cacher le Dashboard */
+    padding: 20px;
+    overflow-y: auto;
+  }
+  
